@@ -1,0 +1,19 @@
+{
+  "name": "cyber-soc-dashboard",
+  "version": "1.0.0",
+  "description": "A SOC-style threat detection dashboard combining: - **Network anomaly detection**: RandomForest + Autoencoder trained on NSL-KDD - **Phishing email detection**: TF-IDF + Logistic Regression trained on the Enron-Spam dataset - **Threat intel matching**: Trie-based IP/domain blocklist lookups (O(k) lookup time) - **Attack pattern clustering**: Graph-based port scan / DDoS detection - **Real-time alerts**: WebSocket broadcast to connected dashboard clients",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,16 @@
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+pydantic==2.7.4
+motor==3.5.0                  # async MongoDB driver for mangodb
+redis==5.0.7
+scikit-learn==1.8.0 # machine learning library for autoencoder
+pandas==2.2.2 # data manipulation library for autoencoder
+numpy==1.26.4 # numerical computing library for autoencoder
+torch==2.3.1                  # torch file for autoencoder
+joblib==1.4.2 # serialization and deserialization of Python objects for autoencoder
+python-multipart==0.0.9 # for handling file uploads in FastAPI
+websockets==12.0  # for handling WebSocket connections
+python-dotenv==1.0.1  # for loading environment variables
+httpx==0.27.0  # for making HTTP requests
+pytest==8.2.2  # for unit testing
+pytest-asyncio==0.23.7 

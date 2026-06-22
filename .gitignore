@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+
+# Large raw datasets (re-downloadable, see README)
+data/raw/*.txt
+data/raw/*.csv
+data/raw/*.zip
+
+# Logs
+*.log

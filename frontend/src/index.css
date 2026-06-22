@@ -598,3 +598,224 @@ button.secondary:hover {
     grid-row: 3;
   }
 }
+/* ── Tablet (768px – 1199px) ───────────────────────────── */
+@media (max-width: 1199px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    overflow-y: auto;
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .left-col {
+    grid-column: 1;
+    grid-row: 1;
+    max-height: 380px;
+  }
+
+  .center-col {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 380px;
+  }
+
+  .right-col {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    max-height: 500px;
+  }
+
+  .bottom-col {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  .drawer {
+    width: 100vw;
+  }
+}
+
+/* ── Large Mobile (480px – 767px) ──────────────────────── */
+@media (max-width: 767px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  #root {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .header-bar {
+    height: auto;
+    min-height: 56px;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 16px;
+  }
+
+  .logo-text {
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+  }
+
+  .badge-live {
+    font-size: 0.6rem;
+    padding: 2px 6px;
+  }
+
+  .status-summary {
+    width: 100%;
+    gap: 12px;
+    font-size: 0.72rem;
+  }
+
+  .dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 8px;
+    gap: 8px;
+    overflow-y: auto;
+  }
+
+  .left-col {
+    max-height: 320px;
+    min-height: 260px;
+  }
+
+  .center-col {
+    min-height: 340px;
+    height: 340px;
+  }
+
+  .right-col {
+    min-height: 420px;
+  }
+
+  .bottom-col {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tab {
+    padding: 5px 8px;
+    font-size: 0.68rem;
+  }
+
+  .drawer {
+    width: 100vw;
+    padding: 16px;
+  }
+
+  .alert-title {
+    font-size: 0.8rem;
+  }
+
+  .alert-ips {
+    font-size: 0.7rem;
+  }
+
+  button {
+    padding: 7px 12px;
+    font-size: 0.72rem;
+  }
+}
+
+/* ── Small Mobile (< 480px) ────────────────────────────── */
+@media (max-width: 479px) {
+  .header-bar {
+    padding: 8px 12px;
+  }
+
+  .logo-text {
+    font-size: 0.82rem;
+    letter-spacing: 0.5px;
+  }
+
+  .status-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .dashboard-grid {
+    padding: 6px;
+    gap: 6px;
+  }
+
+  .panel {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .panel-title {
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+  }
+
+  .left-col {
+    max-height: 280px;
+    min-height: 220px;
+  }
+
+  .center-col {
+    min-height: 280px;
+    height: 280px;
+  }
+
+  .tab-container {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  .tab {
+    white-space: nowrap;
+    padding: 5px 8px;
+    font-size: 0.65rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  input, select, textarea {
+    font-size: 0.8rem;
+    padding: 7px 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 9px 12px;
+    font-size: 0.72rem;
+  }
+
+  .drawer {
+    width: 100vw;
+    padding: 12px;
+  }
+
+  .drawer-title {
+    font-size: 0.9rem;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px 0;
+  }
+
+  .detail-value {
+    font-size: 0.78rem;
+  }
+}

@@ -16,6 +16,7 @@
 </div>
 
 ---
+<img width="1680" height="1050" alt="28041986-FFA2-4901-BAD6-05E4A279AB6D" src="https://github.com/user-attachments/assets/89cccc4b-d191-4843-883b-23da29536edb" />
 
 ## 📸 Screenshots
 

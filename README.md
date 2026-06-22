@@ -238,17 +238,7 @@ cyber-soc-dashboard/
 
 ---
 
-## 🎯 Interview Talking Points
 
-- **Why Autoencoder over just RandomForest?** The RF is supervised — it can only recognize attacks it was trained on. The autoencoder learns what "normal" looks like and flags deviations, catching zero-day attacks by definition. On NSL-KDD's test set (which deliberately includes unseen attack types), the autoencoder achieves 83% accuracy vs RF's 77%.
-
-- **Why a Trie for the blocklist?** Linear scan of a blocklist with 10,000 entries is O(n) per lookup. A Trie brings this to O(k) where k is the IP/domain length — independent of blocklist size. Critical for high-volume traffic inspection.
-
-- **Why not Kafka/Spark?** Real-time alerts use in-process WebSocket broadcasting — the right tool for a single-instance deployment. Redis Pub/Sub would be the documented upgrade path to scale across multiple instances, but claiming Kafka without using it is a red flag in interviews.
-
-- **MongoDB graceful degradation** — if `MONGODB_URI` isn't set, the app falls back to in-memory storage transparently. Production-ready design: zero-setup for local dev, full persistence in deployment.
-
----
 
 ## 👨‍💻 Author
 

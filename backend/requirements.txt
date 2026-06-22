@@ -1,7 +1,8 @@
 fastapi==0.111.0
 uvicorn[standard]==0.30.1
 pydantic==2.7.4
-motor==3.5.0                  # async MongoDB driver for mangodb
+motor==3.5.0                  # async MongoDB driver
+pymongo==4.7.3                # pinned for motor 3.5.0 compatibility                 # async MongoDB driver for mangodb
 redis==5.0.7
 scikit-learn==1.8.0 # machine learning library for autoencoder
 pandas==2.2.2 # data manipulation library for autoencoder
